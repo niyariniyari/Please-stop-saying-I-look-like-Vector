@@ -17,13 +17,13 @@
   <audio id="oliver" src="https://drive.google.com/uc?id=1vCpBx9Krm4LWHo06ML1ijTvSuVAaNnUE"></audio>
   <script>
   const bgm1 = document.querySelector("#oliver"); 
+  bgm1.loop = true;
   let timerid;
   let btntimer = document.getElementById('btnTimer');
   btnTimer.addEventListener('click', function(){
      const t1 = document.getElementById("message").value;
      var t3 = (t1 * 1000);
-     timerid = window.setTimeout(function(){
-       bgm1.loop = true;  
+     timerid = window.setTimeout(function(){  
        bgm1.play();
      }, t3);
  });
