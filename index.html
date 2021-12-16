@@ -23,7 +23,8 @@
      const t1 = document.getElementById("message").value;
      var t3 = (t1 * 1000);
      timerid = window.setTimeout(function(){
-         bgm1.loop();
+       bgm1.loop = true;  
+       bgm1.play();
      }, t3);
  });
   </script>
